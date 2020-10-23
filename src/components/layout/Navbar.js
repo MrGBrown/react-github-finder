@@ -2,11 +2,11 @@ import React from 'react';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import PropTypes from 'prop-types';
 
-const Navbar = (props) => {
+const Navbar = ({ icon, title }) => {
         return (
             <nav className='navbar bg-primary'>
                 <h1>
-                    <FontAwesomeIcon icon={props.icon} /> {props.title}
+                    <FontAwesomeIcon icon={icon} /> {title}
                 </h1>
             </nav>
         )
